@@ -1,0 +1,37 @@
+EntrantChoice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="example_schema.xsd">
+    <Guid>3878111111</Guid>
+    <AddEntrant>
+        <Identification>
+            <IdDocumentType>1</IdDocumentType>
+            <DocName>Паспорт гражданина Российской Федерации</DocName>
+            <DocSeries>5661</DocSeries>
+            <DocNumber>111111</DocNumber>
+            <IssueDate>2019-09-08</IssueDate>
+            <DocOrganization>МВД-АВОР.ПРДЛПАРОДАЬЕК</DocOrganization>
+            <SubdivisionCode>111-111</SubdivisionCode>
+            <IdOksm>185</IdOksm>
+            <Surname>Яруллин</Surname>
+            <Name>Максим</Name>
+            <Patronymic>None</Patronymic>
+        </Identification>
+        <Snils> 12345678901 </Snils>
+        <IdGender>1</IdGender>
+        <Birthday> 2000-01-01 </Birthday>
+        <Birthplace>Россия Г.Астана</Birthplace>
+        <Phone>+7 (888) 888-88-88</Phone>
+        <Email> sample@example.com </Email>
+        <IdOksm>185</IdOksm>
+        <FreeEducationReason>
+            <IdFreeEducationReason> 1 </IdFreeEducationReason>
+            <IdOksmFreeEducationReason> 1 </IdOksmFreeEducationReason>
+        </FreeEducationReason>
+        <AddressList>
+            <Address>
+                <IsRegistration> true </IsRegistration>
+                <FullAddr>Могилевская область тестовый дом</FullAddr>
+                <IdRegion>22</IdRegion>
+                <City> Sample City </City>
+            </Address>
+        </AddressList>
+    </AddEntrant>
+</EntrantChoice>
