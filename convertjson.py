@@ -30,6 +30,7 @@ xml_json_dict: dict[str, str] = {"SubdivisionCode":"passport_org_code" ,
             "FullAddr": "address_txt1",
             "Guid":"user_id",
             #"IdRegion":"kladr_1"
+            "City":"city"
             }
 
 
@@ -53,8 +54,9 @@ def xml_tree(json_data: dict) -> Tuple[list, str]:
 
     for item in tree.getiterator():
         if (item.tag == "Identification"):
+            field_el = ET.SubElement(item,'Field')
             for tag in new_tags:
-                buf = ET.SubElement(item, tag)
+                buf = ET.SubElement(field_el, tag)
                 buf.text = "none"
 
     return tree, doc

@@ -8,6 +8,7 @@
 | birthday   | 2005-07-08  |
 | passport_begda    | 2019-09-08   |
 |  old_passport_begda|1111-11-11 |
+|city(добавление ключа)| "Астана""|
 |diploma_date|2000-10-10|
 |user_id|3878111111|
 
@@ -15,7 +16,7 @@
 - json-> xml
 ```xml
 <EntrantChoice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="example_schema.xsd">
-    <Guid>3878111111</Guid>
+    <Guid>3878</Guid>
     <AddEntrant>
         <Identification>
             <IdDocumentType>1</IdDocumentType>
@@ -24,11 +25,13 @@
             <DocNumber>111111</DocNumber>
             <IssueDate>2019-09-08</IssueDate>
             <DocOrganization>МВД-АВОР.ПРДЛПАРОДАЬЕК</DocOrganization>
-            <SubdivisionCode>111-111</SubdivisionCode>
-            <IdOksm>185</IdOksm>
-            <Surname>Яруллин</Surname>
-            <Name>Максим</Name>
-            <Patronymic>None</Patronymic>
+            <Field>
+                <SubdivisionCode>111-111</SubdivisionCode>
+                <IdOksm>185</IdOksm>
+                <Surname>Яруллин</Surname>
+                <Name>Максим</Name>
+                <Patronymic>None</Patronymic>
+            </Field>
         </Identification>
         <Snils> 12345678901 </Snils>
         <IdGender>1</IdGender>
