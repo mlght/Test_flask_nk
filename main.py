@@ -11,7 +11,7 @@ def main_page():
 
     return "work"
 
-@app.route('/convert_json', methods=['POST'])
+@app.route('/convert_json_to_xml', methods=['POST'])
 def convert_json():
     """ Конвертирует JSON файл из POST запроса в XML. Если передан параметр 'validation', проводит валидацию по XSD """
     try:
@@ -27,7 +27,7 @@ def convert_json():
     return result
 
 
-@app.route('/convert_xml', methods=['POST'])
+@app.route('/convert_xml_to_json', methods=['POST'])
 def convert_xml():
     """ Конвертирует XML файл из POST запроса в JSON. Если передан параметр 'validation', проводит валидацию по XSD """
     result = xml_to_json(request.data.decode(encoding='utf-8'))
