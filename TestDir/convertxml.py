@@ -25,10 +25,10 @@ xml_json_dict: dict[str, str] = {"SubdivisionCode": "passport_org_code",
             "Birthplace": "motherland",
             "Phone": "tel_mobile",
             #"IdOksm": "citizenship_id",
-            "FullAddr": "address_txt1",
+            #"FullAddr": "address_txt1",
             "Guid":"user_id",
             #"IdRegion":"kladr_1"
-            "City":"city",
+            #"City":"city",
             "IdJwt": "id",
             "Fui": "photo_id",
           }
@@ -70,7 +70,6 @@ def xml_to_json(data: str) -> str:
     for key, item in flat_dict.items():
         if (key in xml_json_dict):
             final_dict[xml_json_dict[key]] = item
-    #print(type(flat_dict["Address"]))
 
     if "Address" in flat_dict.keys():
         num = "1"
@@ -82,14 +81,12 @@ def xml_to_json(data: str) -> str:
                 final_dict["has_another_living_address"] = "true"
                 final_dict["address_txt" + str(int(num) + 1)] = adr["FullAddr"]
                 num = str(int(num) + 1)
-    elif "FullAdr" in flat_dict.keys():
-        final_dict["address_txt1"] = flat_dict["Address"]["FullAddr"]
-        final_dict["city"] = flat_dict["Address"]["City"]
+    elif "FullAddr" in flat_dict.keys():
+        final_dict["address_txt1"] = flat_dict["FullAddr"]
+        final_dict["city"] = flat_dict["City"]
         final_dict["has_another_living_address"] = "false"
 
-    print("##################")
-    for key, item in final_dict.items():
-        print(key,':',item)
+
 
     json_data = json.dumps(final_dict, allow_nan=True, indent=' ')
 
