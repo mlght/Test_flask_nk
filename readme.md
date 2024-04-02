@@ -82,7 +82,7 @@
 ## Инструкция по запуску
 ```
 $ python3 -m pip install -r requirements.txt
-$ python3 TestFl
+$ python3 TestDir
 ```
 
 Для конвертации необходимо отправить POST запрос по адресу http://127.0.0.1:5000/convert_json_to_xml или http://127.0.0.1:5000/convert_xml_to_json.

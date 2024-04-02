@@ -70,9 +70,10 @@ def xml_to_json(data: str) -> str:
     for key, item in flat_dict.items():
         if (key in xml_json_dict):
             final_dict[xml_json_dict[key]] = item
+    #print(type(flat_dict["Address"]))
 
-    if isinstance(flat_dict["Address"], list):
-        num="1"
+    if "Address" in flat_dict.keys():
+        num = "1"
         for adr in flat_dict["Address"]:
             if adr["IsRegistration"] == "true":
                 final_dict["address_txt1"] = adr["FullAddr"]
@@ -81,10 +82,14 @@ def xml_to_json(data: str) -> str:
                 final_dict["has_another_living_address"] = "true"
                 final_dict["address_txt" + str(int(num) + 1)] = adr["FullAddr"]
                 num = str(int(num) + 1)
-    elif isinstance(flat_dict["Address"], dict):
-        final_dict["address_txt1"] = flat_dict["Adress"]["FullAddr"]
-        final_dict["city"] = flat_dict["Adress"]["City"]
+    elif "FullAdr" in flat_dict.keys():
+        final_dict["address_txt1"] = flat_dict["Address"]["FullAddr"]
+        final_dict["city"] = flat_dict["Address"]["City"]
         final_dict["has_another_living_address"] = "false"
+
+    print("##################")
+    for key, item in final_dict.items():
+        print(key,':',item)
 
     json_data = json.dumps(final_dict, allow_nan=True, indent=' ')
 
