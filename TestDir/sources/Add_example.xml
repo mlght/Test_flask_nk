@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EntrantChoice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="example_schema.xsd">
+  <Guid>Sample Guid</Guid>
+    <AddEntrant>
+        <Identification>
+            <IdDocumentType> 1 </IdDocumentType>
+            <DocName> Sample Document </DocName>
+            <DocSeries> 123 </DocSeries>
+            <DocNumber> 456789 </DocNumber>
+            <IssueDate> 2024-03-30 </IssueDate>
+            <DocOrganization> Sample Organization </DocOrganization>
+        </Identification>
+        <Snils> 12345678901 </Snils>
+        <IdGender> 1 </IdGender>
+        <Birthday> 2000-01-01 </Birthday>
+        <Birthplace> Sample Birthplace </Birthplace>
+        <Phone> 123456789 </Phone>
+        <Email> sample@example.com </Email>
+        <IdOksm> 1 </IdOksm>
+        <AddressList>
+            <Address>
+                <IsRegistration> true </IsRegistration>
+                <FullAddr> Sample Address </FullAddr>
+                <IdRegion> 1 </IdRegion>
+                <City> Sample City </City>
+            </Address>
+        </AddressList>
+    </AddEntrant>
+</EntrantChoice>
