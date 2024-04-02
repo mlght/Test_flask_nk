@@ -29,6 +29,12 @@
                     <IdRegion>1</IdRegion>
                     <City>Sample City</City>
                 </Address>
+				<Address>
+                    <IsRegistration>false</IsRegistration>
+                    <FullAddr>Sample Address 2</FullAddr>
+                    <IdRegion>1</IdRegion>
+                    <City>Sample City</City>
+                </Address>
             </AddressList>
             <DocumentList>
                 <Document>
