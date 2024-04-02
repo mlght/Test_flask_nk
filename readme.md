@@ -26,13 +26,13 @@
             <DocNumber>111111</DocNumber>
             <IssueDate>2019-09-08</IssueDate>
             <DocOrganization>МВД-АВОР.ПРДЛПАРОДАЬЕК</DocOrganization>
-            <Field>
+            <Fields>
                 <SubdivisionCode>111-111</SubdivisionCode>
                 <IdOksm>185</IdOksm>
                 <Surname>Яруллин</Surname>
                 <Name>Максим</Name>
                 <Patronymic>None</Patronymic>
-            </Field>
+            </Fields>
         </Identification>
         <Snils> 12345678901 </Snils>
         <IdGender>1</IdGender>

@@ -54,10 +54,10 @@ def xml_tree(json_data: dict) -> Tuple[list, str]:
 
     for item in tree.getiterator():
         if (item.tag == "Identification"):
-            field_el = ET.SubElement(item,'Field')
+            field_el = ET.SubElement(item,'Fields')
             for tag in new_tags:
                 buf = ET.SubElement(field_el, tag)
-                buf.text = "none"
+                buf.text = "1"
 
     return tree, doc
 
