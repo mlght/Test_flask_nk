@@ -55,56 +55,26 @@
 - xml->json
 ``` json
 {
-"IdJwt": "123456",
-"EntityAction": "Campaign_Add",
-"IdObject": "789",
-"Snils": "12345678901",
-"Birthday": "2000-01-01",
-"Email": "sample@example.com",
-"AvailabilityEduDoc": "true",
-"DateAvailabilityEduDoc": "2024-03-30T12:00:00+03:00",
-"IdFreeEducationReason": "1",
-"IdOksmFreeEducationReason": "1",
-"IsRegistration": "true",
-"FullAddr": "Sample Address",
-"IdRegion": "1",
-"City": "Sample City",
-"Document": [
 {
-"Guid": "DocumentGuid123",
-"FileHash": "SampleFileHash",
-"IdDocumentType": "1",
-"DocName": "SampleDocumentName",
-"DocSeries": "ABC",
-"DocNumber": "123456",
-"IssueDate": "2020-01-01",
-"DocOrganization": "SampleOrganization",
-"IdCheckStatus": "1",
-"IdAchievementCategory": "1"
-},
-{
-"Guid": "DocumentGuid3445",
-"FileHash": "SampleFileHash2",
-"IdDocumentType": "2",
-"DocName": "SampleDocumentName3",
-"DocSeries": "12341",
-"DocNumber": "123453",
-"IssueDate": "2020-01-01",
-"DocOrganization": "SampleOrganization4",
-"IdCheckStatus": "1",
-"IdAchievementCategory": "1"
-}
-],
-"FileHash": "SamplePhotoHash",
-"Fui": "SampleFui123",
-"user_id": "SampleGuid123",
+"id": "123456",
+"user_id": "DocumentGuid123",
 "dict_sex_id": "1",
 "motherland": "Sample Birthplace",
 "tel_mobile": "123456789",
 "second_name": "SampleSurname",
 "first_name": "SampleName",
 "middle_name": "SamplePatronymic",
-"residence_country_id": "1"
+"residence_country_id": "1",
+"passport_type_id": "1",
+"passport_series": "ABC",
+"passport_number": "123456",
+"passport_begda": "2020-01-01",
+"passport_issued_by": "SampleOrganization",
+"photo_id": "SampleFui123",
+"address_txt1": "Sample Address",
+"city": "Sample City",
+"has_another_living_address": "true",
+"address_txt2": "Sample Address 2"
 }
 ```
 
