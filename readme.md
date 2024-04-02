@@ -19,7 +19,7 @@
     <Guid>3878</Guid>
     <AddEntrant>
         <Identification>
-            <IdDocumentType>1</IdDocumentType>
+            <IdDocumentType>100001</IdDocumentType>
             <DocName>Паспорт гражданина Российской Федерации</DocName>
             <DocSeries>5661</DocSeries>
             <DocNumber>111111</DocNumber>
@@ -45,7 +45,7 @@
                 <IsRegistration> true </IsRegistration>
                 <FullAddr>Могилевская область тестовый дом</FullAddr>
                 <IdRegion>22</IdRegion>
-                <City> Sample City </City>
+                <City>Астана</City>
             </Address>
         </AddressList>
     </AddEntrant>
