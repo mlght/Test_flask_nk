@@ -11,6 +11,7 @@
 |city(добавление ключа)| "Астана""|
 |diploma_date|2000-10-10|
 |user_id|3878111111|
+|passport_type_id| 100001|
 
 ### Пример выходных данных:
 - json-> xml
@@ -54,7 +55,6 @@
 
 - xml->json
 ``` json
-{
 {
 "id": "123456",
 "user_id": "DocumentGuid123",

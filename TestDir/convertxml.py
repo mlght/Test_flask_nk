@@ -69,7 +69,7 @@ def xml_to_json(data: str) -> str:
 
     for key, item in flat_dict.items():
         if (key in xml_json_dict):
-            final_dict[xml_json_dict[key]]= item
+            final_dict[xml_json_dict[key]] = item
 
     if isinstance(flat_dict["Address"], list):
         num="1"

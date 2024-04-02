@@ -16,7 +16,7 @@ xml_json_dict: dict[str, str] = {"SubdivisionCode":"passport_org_code" ,
             "Surname": "second_name",
             "Name": "first_name",
             "Patronymic": "middle_name",
-            #"IdDocumentType": "passport_type_id",
+            "IdDocumentType": "passport_type_id",
             #"DocName": "",
             "DocSeries": "passport_series",
             "DocNumber": "passport_number",
@@ -41,7 +41,7 @@ def xml_tree(json_data: dict) -> Tuple[list, str]:
     json_data -- словарь JSON документа для конвертации
      """
     tree = ET.parse(xsd_add_example)
-    field_id = int(json_data["passport_type_id"])+100000
+    field_id = int(json_data["passport_type_id"])
     with open(fields_class, 'rb') as field_file:
         field = json.load(field_file)
     new_tags = []
@@ -74,11 +74,8 @@ def filling_xml(tree: list, json_data: str, doc: str) -> str:
     keys = xml_json_dict.keys()
 
     for item in tree.getiterator():
-        if item.tag == "IdDocumentType":
-            item.text = str(int(json_data["passport_type_id"])+100000)
         if item.tag == "IdRegion":
             item.text = json_data["kladr_1"][:2]
-
         elif item.tag == "FullAddr":
             item.text = (json_data["address_txt1"]+(" " + json_data["address_txt2"] if json_data["address_txt2"] is not None else "")+
                         (" " + json_data["address_txt3"] if json_data["address_txt3"] is not None else "")+
